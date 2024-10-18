@@ -58,11 +58,122 @@ npm run start
 
 - **Parámetros de Consulta**:
   - `count` (opcional): número de usuarios a generar. Si no se especifica, se devuelve un valor predeterminado.
-- `GET /users`: Obtiene una lista de usuarios generada aleatoriamente.
+  - `GET ¨http://localhost:3000/users`: Obtiene una lista de usuarios generada aleatoriamente.
   - Query Parameters: `count(number)`
   - Respuesta exitosa: `200 OK`
-  - Ejemplo de respuesta: `[{"id": 1,"name": "John Doe","email": "john.doe@example.com","address": "123 Main St","phone": "123-456-7890"},{"id": 2,"name": "Jane Smith","email":jane.smith@example.com","address": "456 Elm St","phone": "987-654-3210"}]`
-
+  - Ejemplo de respuesta: 
+    ```json
+    [{
+        "id": "e1e91707-98e3-4f87-a5c6-a8633e1caf8f",
+        "name": "Andrea Daugherty",
+        "email": "Vergie_Wolff90@hotmail.com",
+        "address": {
+            "street": "367 Kreiger Mall",
+            "city": "Fort Casimertown",
+            "country": "China"
+        },
+        "phone": "1-651-504-0978"
+    },
+    {
+        "id": "c924e06e-6bbc-4a98-a59e-f8619de172dd",
+        "name": "Stephen Welch",
+        "email": "Estevan77@yahoo.com",
+        "address": {
+            "street": "16746 Clarence Street",
+            "city": "Kutchchester",
+            "country": "Zambia"
+        },
+        "phone": "725.283.9879 x8161"
+    },
+    {
+        "id": "b4e4e606-ff1f-41c0-a6ad-d09be86ad1ed",
+        "name": "Jeannette Hansen-Terry",
+        "email": "Dashawn20@gmail.com",
+        "address": {
+            "street": "1180 Gavin Shoal",
+            "city": "Raulshire",
+            "country": "Mauritius"
+        },
+        "phone": "1-666-868-7018 x2762"
+    },
+    {
+        "id": "e37a8dbd-f2b4-4be8-ba05-9b1f7fa67293",
+        "name": "Adam Wisoky",
+        "email": "Magdalena.Weimann-Wisoky31@gmail.com",
+        "address": {
+            "street": "9235 River Road",
+            "city": "Joliet",
+            "country": "South Sudan"
+        },
+        "phone": "800.644.5400 x22677"
+    },
+    {
+        "id": "3a0021c1-407a-47c6-b1b1-bbb2222c52f6",
+        "name": "Christine Volkman",
+        "email": "Juliana34@hotmail.com",
+        "address": {
+            "street": "6571 Dach Causeway",
+            "city": "Avondale",
+            "country": "Dominican Republic"
+        },
+        "phone": "969.986.1672 x194"
+    },
+    {
+        "id": "3193e23a-35d2-4d3a-9f3a-b51c0d5f789c",
+        "name": "Horace Tillman DDS",
+        "email": "Presley.Howell@yahoo.com",
+        "address": {
+            "street": "94711 Estell Points",
+            "city": "Ricardotown",
+            "country": "Fiji"
+        },
+        "phone": "1-333-970-0590 x98981"
+    },
+    {
+        "id": "5b9d0d39-c982-4e37-a34e-1d59cf7e485d",
+        "name": "Arlene Swaniawski",
+        "email": "Dario_Streich26@gmail.com",
+        "address": {
+            "street": "616 Bedford Road",
+            "city": "Collierchester",
+            "country": "Iraq"
+        },
+        "phone": "(381) 435-1152 x6107"
+    },
+    {
+        "id": "b1d4875b-e6c9-4371-adb5-6c246a63ca77",
+        "name": "Stanley Boyle DVM",
+        "email": "Elinore54@gmail.com",
+        "address": {
+            "street": "7993 State Road",
+            "city": "Botsfordborough",
+            "country": "North Macedonia"
+        },
+        "phone": "1-410-700-5905 x771"
+    },
+    {
+        "id": "7a74d156-e5b0-4986-8b25-f9b8ccae037f",
+        "name": "Janie Schumm",
+        "email": "Helen_Ratke60@gmail.com",
+        "address": {
+            "street": "9240 Bridge Street",
+            "city": "North Earline",
+            "country": "Algeria"
+        },
+        "phone": "1-223-882-5683 x87866"
+    },
+    {
+        "id": "f96a6316-b98c-4614-8a45-68e908ee39d3",
+        "name": "Jaime Krajcik",
+        "email": "Ron.Stracke@yahoo.com",
+        "address": {
+            "street": "5158 Lorenz Cliff",
+            "city": "East Gertrude",
+            "country": "Guinea-Bissau"
+        },
+        "phone": "(685) 278-7919"
+    }]
+    ```
 ## Errores
 
 - `400 Bad Request`: Invalid count parameter.
