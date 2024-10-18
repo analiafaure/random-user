@@ -58,28 +58,15 @@ npm run start
 
 - **Parámetros de Consulta**:
   - `count` (opcional): número de usuarios a generar. Si no se especifica, se devuelve un valor predeterminado.
-- `GET /users`: Obtiene el snapshot de un exchange con su par de manera ordenada.
+- `GET /users`: Obtiene una lista de usuarios generada aleatoriamente.
   - Query Parameters: `count(number)`
   - Respuesta exitosa: `200 OK`
-  - Ejemplo de respuesta: `[{
-      "id": 1,
-      "name": "John Doe",
-      "email": "john.doe@example.com",
-      "address": "123 Main St",
-      "phone": "123-456-7890"
-    },
-    {
-      "id": 2,
-      "name": "Jane Smith",
-      "email": "jane.smith@example.com",
-      "address": "456 Elm St",
-      "phone": "987-654-3210"
-    }]`
+  - Ejemplo de respuesta: `[{"id": 1,"name": "John Doe","email": "john.doe@example.com","address": "123 Main St","phone": "123-456-7890"},{"id": 2,"name": "Jane Smith","email":jane.smith@example.com","address": "456 Elm St","phone": "987-654-3210"}]`
 
 ## Errores
 
-- `400 Bad Request`: La solicitud contiene datos incorrectos o incompletos.
-- `500 Internal Server Error`: Error interno del servidor.
+- `400 Bad Request`: Invalid count parameter.
+- `500 Internal Server Error`: Internal Server Error.
 
 
 ## Stay in touch
